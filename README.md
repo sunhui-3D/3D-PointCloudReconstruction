@@ -1,5 +1,4 @@
 # 3D-FENet
-```
 
 ## Dataset
 
@@ -32,7 +31,7 @@ The folder structure should now look like this:<br>
 &nbsp;&nbsp;--pix3d.json<br>
 
 ## Usage
-Install [Pyrotch](https://pytorch.org/get-started/previous-versions/). We recommend pytorch 1.8. The code provided has been tested with Python 3.7, Pytorch 1.8, and CUDA 10.0. The following steps need to be performed to run the codes given in this repository:
+Install [Pyrotch](https://pytorch.org/get-started/previous-versions/). We recommend pytorch. The code provided has been tested with Python 3.6.13, torch 1.5, torchvision 0.6.0+cu101, tensorboard 1.14.0, and CUDA 10.1. The following steps need to be performed to run the codes given in this repository:
 
 1. Clone the repository:
 ```shell
@@ -41,16 +40,48 @@ cd 3d-FENet
 ```
 2. Pytorch for losses (Chamfer and EMD)  need to be setup. Run the setup as given below. (Note that the the nvcc, cudalib):
 
+[Pytorch Chamfer Distance](https://github.com/ThibaultGROUEIX/ChamferDistancePytorch.git)
+
+
+```shell
+cd ./metric
+# install Chamfer3D
+cd chamfer3D
+python setup.py install --user
+# test the chamfer3D
+python test.py
+
+# install EMD
+cd ..
+cd emd
+python setup.py install --user 
+#test emd
+python test.py
+```
+
+3. Install the requirements
+```
+pip install -r ./requirements.txt
+```
+
+4. Pretrained RepVGG weights
+[Backbone](https://github.com/open-mmlab/mmclassification/tree/master/configs/repvgg) download to pretrained_models.
+
+
 ## Training
 - To train the network, run:
 ```shell
 python train.py
 ```
 
-## Trained Models
-
-
-## Evaluation
-Follow the steps detailed above to download the dataset and pre-trained models.
-
+## Testing
+- To test the network,run
+```shell
+python test.py
+```
+## Visualize
+- Visualize the point cloud
+```shell
+python shapenet_img.py
+```
 
