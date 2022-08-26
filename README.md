@@ -44,13 +44,15 @@ cd 3d-FENet
 3.Install the requirements
 ```
 pip install -r ./requirements.txt
+```
 
 ## Training
 - To train the network, run:
 ```shell
 python train.py
 ```
-##Testing
+
+## Testing
 -To test the network,run
 ```shell
 python test.py
