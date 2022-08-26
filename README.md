@@ -58,10 +58,3 @@ python train.py
 python test.py
 ```
 
-## Trained Models
-
-
-## Evaluation
-Follow the steps detailed above to download the dataset and pre-trained models.
-
-
