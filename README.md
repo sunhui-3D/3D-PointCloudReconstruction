@@ -39,9 +39,9 @@ git clone https://github.com/sunhui-3D/3D-FHNet.git
 cd 3d-FENet
 ```
 2. Pytorch for losses (Chamfer and EMD)  need to be setup. Run the setup as given below. (Note that the the nvcc, cudalib):
-```
+
 [Pytorch Chamfer Distance](https://github.com/ThibaultGROUEIX/ChamferDistancePytorch.git)
-```
+
 
 ```shell
 cd ./metric
