@@ -75,8 +75,13 @@ python train.py
 ```
 
 ## Testing
--To test the network,run
+- To test the network,run
 ```shell
 python test.py
+```
+## Visualize
+- Visualize the point cloud
+```shell
+python shapenet_img.py
 ```
 
