@@ -65,7 +65,6 @@ pip install -r ./requirements.txt
 ```
 
 4. Pretrained RepVGG weights
-
 [Backbone](https://github.com/open-mmlab/mmclassification/tree/master/configs/repvgg) download to pretrained_models.
 
 
