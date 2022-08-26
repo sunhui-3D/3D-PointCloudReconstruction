@@ -41,10 +41,13 @@ cd 3d-FENet
 2. Pytorch for losses (Chamfer and EMD)  need to be setup. Run the setup as given below. (Note that the the nvcc, cudalib):
 [Pytorch Chamfer Distance](https://github.com/ThibaultGROUEIX/ChamferDistancePytorch.git)
 
-3.Install the requirements
+3. Install the requirements
 ```
 pip install -r ./requirements.txt
 ```
+
+4. Pretrained RepVGG model
+[Backbone](https://github.com/open-mmlab/mmclassification/tree/master/configs/repvgg) download to pretrained_models.
 
 ## Training
 - To train the network, run:
