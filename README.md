@@ -40,6 +40,21 @@ cd 3d-FENet
 ```
 2. Pytorch for losses (Chamfer and EMD)  need to be setup. Run the setup as given below. (Note that the the nvcc, cudalib):
 [Pytorch Chamfer Distance](https://github.com/ThibaultGROUEIX/ChamferDistancePytorch.git)
+```shell
+cd ./metric
+# install Chamfer3D
+cd chamfer3D
+python setup.py install --user
+# test the chamfer3D
+python test.py
+
+# install EMD
+cd ..
+cd emd
+python setup.py install --user 
+#test emd
+python test.py
+```
 
 3. Install the requirements
 ```
